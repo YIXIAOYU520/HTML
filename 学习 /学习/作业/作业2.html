@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		/* 标签选择器 */
+			div{color: #0000FF;}
+			/* id选择器 */
+			#xye{color: #DC143C;}
+			/* 类选择器 */
+			.zt{color: #8A2BE2;}
+			#wzd{color: #FF0000;}
+			/* 伪类选择器 */
+			#wzd:hover{color: blueviolet;}
+			/* 并列选择器 */
+			h1,h2,h3{color: coral;}
+			/* 后代选择器 */
+			div span{color: #0000FF;}
+			p span{color: #7FFF00;}
+		</style>
+	</head>
+	<body>
+		<form action="" method="post">
+			用户名：
+			<input type="text" placeholder="请输入用户名">
+			<br>
+			密码框：
+			<input type="password" placeholder="请输入密码">
+			<br>
+			下拉菜单：
+			<select name="">
+				<option value="">西瓜</option>
+				<option value="">苹果</option>
+				<option value="" selected="selected">桃子</option>
+				<option value="">香蕉</option>
+				<option value="">榴莲</option>
+			</select>
+			<br>
+			你的性别：
+			<input type="radio" name="xb">男
+			<input type="radio" name="xb" checked="checked">女
+			<br>
+			你的爱好：
+			<input type="checkbox">测试
+			<input type="checkbox">吃饭
+			<input type="checkbox" checked="checked">看电视
+			<br>
+			文本域：
+			<textarea name="" id="" cols="30" rows="10" placeholder="请输入内容"></textarea>
+			<br>
+			普通按钮：
+			<input type="button" value="点击我">
+			<br>
+			重置按钮：
+			<input type="reset" value="重置">
+			<br>
+			提交按钮：
+			<input type="submit" value="点击提交">
+		</form>
+		<div>韩鹏</div>
+		<div id="xye">小鱼儿</div>
+		<div class="zt">张婷</div>
+		<div class="zt">哈喽</div>
+		<!-- 行内式 -->
+		<div style="color: aqua;">哈哈哈哈</div>
+		<div id="wzd">我知道</div>
+		<h1>111</h1>
+		<h2>222</h2>
+		<h3>333</h3>
+		<div>
+			<span>llllll</span>
+			<p>
+				<span>jjjjjj</span>
+				<p>
+					<span>ggggg</span>
+				</p>
+			</p>
+		</div>
+	</body>
+</html>

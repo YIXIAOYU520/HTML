@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<input type="button" value="弹出对话框" id="YXY">
+		<input type="button" value="JS" class="YXY">
+		<input type="button" value="CSS" class="YXY">
+		<input type="button" value="HTML" class="YXY">
+	</body>
+</html>
+<script type="text/javascript">
+	//事件语法规则：事件源.事件类型=function(){事件发生的时候要执行的命令}
+	//function是固定语法暂时不用管
+	//按钮就是事件源，事件类型是左键点击，大括号里面就是我要去执行对话框这个命令
+	//document：代表查找的范围在整个文档中
+	//document.getElementById('YXY'):事件源，通过id的值为YXY的按钮
+	//onclick:事件类型：代表的是鼠标左键点击
+	//{alert('你点什么呀')}:代表事件发生的时候执行的命令操作弹出对话框
+	document.getElementById('YXY').onclick=function(){alert('你点什么呀')};
+	//getElementsByClassName('YXY')找class为YXY的标签
+	//[数字]：代表第几个，从0开始记录数字（索引值、地址下标）
+	document.getElementsByClassName('YXY')[0].onclick=function(){alert('我也点一下')};
+	//onmouseover：代表鼠标的移入事件
+	document.getElementsByClassName('YXY')[1].onmouseover=function(){alert('点击一下')};
+	//onmouseout：代表鼠标的移出事件
+	document.getElementsByClassName('YXY')[2].onmouseout=function(){alert('这是哪里呀')};
+</script>

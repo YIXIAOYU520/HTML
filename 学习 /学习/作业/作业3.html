@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- 
+1、JS可以控制web前端的哪两个？
+css和html
+2、写一个普通按钮，使用js设置鼠标移入的时候，弹出“鼠标移入”；
+3、写一个提交按钮，使用js设置鼠标移出的时候，弹出“鼠标移出”； -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="" method="post">
+			普通按钮:
+			<input type="button" value="鼠标移入" id="zz">
+			<br>
+			提交按钮：
+			<input type="submit" value="鼠标移出" class="xx">
+		</form>
+ 
+	</body>
+</html>
+<script type="text/javascript">
+	document.getElementById('zz').onmouseover=function(){alert('鼠标移入')};
+	document.getElementsByClassName('xx')[0].onmouseout=function(){alert('鼠标移出')};
+</script>

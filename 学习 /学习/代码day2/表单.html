@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>小鱼儿的网站</title>
+	</head>
+	<body>
+		<!-- from标签里面就是所有用户填写的表单数据 -->
+		<!-- action作用是把表单数据提交给哪一个后台程序去处理 -->
+		<!-- method作用是传递数据的方式方法，post代表隐式传递，get代表明文传送数据 -->
+		<form action="xxx.php" method="post">
+			<!-- 写中文的冒号防止生成代码错误，
+			 type="text"代表普通的输入框-->
+			 <!-- placeholder="请输入用户名"  文字提醒属性 -->
+			 <!-- autofocus="刷新页面光标停留在表单里可以直接输入，增加用户体验 -->
+			用户名：
+			<input type="text" placeholder="请输入用户名" autofocus="autofocus"/>
+			<br>
+			<!--type="password"代表密码框，不明文显示，输入的内容被隐藏  -->
+			密码框：
+			<input type="password" placeholder="请输入密码">
+			<br>
+			<!-- 单选框：typr="radio代表单选框" -->
+			性别：
+			<!-- 加name属性是为了区分单选按钮，都为xb，只能选择其中一个 -->
+			<input type="radio" name="xb">男 
+			<!-- checked="checked"属性代表默认选中状态 -->
+			<input type="radio" name="xb" checked="checked" id="nv">
+			<!-- label的for对应input里面的id，代表这个文字点击也可以选中 -->
+			<label for="nv">女</label>
+			<br>
+			<!-- 多选框:type="checkbox"属性代表多选框-->
+			你的爱好：
+			<input type="checkbox" id="cs">
+			<!-- label的for对应input里面的id，代表这个文字点击也可以选中 -->
+			<label for="cs">测试</label>
+			<!-- checked="checked"属性代表默认选中，这个在单选多选都可以使用 -->
+			<input type="checkbox" checked="checked">吃饭
+			<input type="checkbox">睡觉
+			<input type="checkbox">玩耍
+			<br>
+			<!-- 下拉菜单:select标签嵌套若干个option，
+			每一组option都为一个下拉菜单中的选项-->
+			来自：
+			<select name="">
+				<option value="">广州</option>
+				<option value="">深圳</option>
+				<option value="">四川</option>
+				<option value="">湖南</option>
+			<!--默认选中：在option加一个属性selected="selected"表示默认选中 -->
+				<option value="" selected="selected">北京</option>
+				<option value="">杭州</option>
+			</select>
+			<br>
+			<!-- 文本域:textarea标签代表文本域 -->
+			意见：
+			<textarea name="" id="" cols="30" rows="10" placeholder="请输入内容"></textarea>	
+			<br>
+			普通按钮：
+			<!-- type="button"代表普通按钮需要js配合才能实现其他效果，
+			加value属性加文字实现按钮里面的描述效果 -->
+			<input type="button" value="保存">
+			<br>
+			重置按钮：
+			<!-- type="reset"代表重置按钮，默认按钮的文案就是自带重置，
+			加value属性加文字实现按钮里面的文字修改效果，实现的效果是恢复默认状态-->
+			<input type="reset">
+			<input type="reset" value="重置按钮">
+			<br>
+			提交按钮：
+			<!-- type="submit"代表提交按钮，默认按钮的文案就是自带提交两个字，
+			加value属性加文字实现按钮里面的文字修改效果，实现的效果就是提交表单数据-->
+			<input type="submit">
+			<input type="submit" value="提交按钮">
+		</form>
+	</body>
+</html>
